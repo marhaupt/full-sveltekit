@@ -22,7 +22,7 @@
             <p class="mx-auto mt-4 max-w-3xl text-lg text-gray-300 sm:text-xl md:text-2xl">
                 {m.home_hero_subtitle()}
             </p>
-            <Button href="/movies" class="bg-background text-primary mt-8 hover:bg-slate-400">
+            <Button href="/private/movies" class="bg-background text-primary mt-8 hover:bg-slate-400">
                 {m.home_hero_cta()}
             </Button>
         </div>
@@ -39,7 +39,7 @@
                 >
                     {m.home_cta_subtitle()}
                 </p>
-                <Button href="/signup">
+                <Button href="/login">
                     {m.home_cta_button()}
                 </Button>
             </div>
