@@ -1,12 +1,24 @@
 {
     "login_field_email_title": "Email",
-    "login_field_email_description": "Musíte se zaregistrovat v Supabase",
-    "login_field_password_title": "Heslo",
-    "login_field_button": "Přihlásit se",
+    "login_field_email_description": "You have to register yourself in Supabase",
+    "login_field_password_title": "Password",
+    "login_field_button": "Login",
 
-    "nav_home": "Domů",
-    "nav_logout": "Odhlásit se",
+    "nav_home": "Home",
+    "nav_logout": "Logout",
 
-    "private_page_title": "Vítejte!!",
-    "private_page_description": "Toto je soukromá stránka. Můžete ji vidět pouze tehdy, když jste přihlášeni."
+    "private_page_title": "Welcome!!",
+    "private_page_description": "This is a private page. You can only see this if you are logged in.",
+
+    "home_hero_title": "Welcome to SvelteMovies",
+    "home_hero_subtitle": "Discover, Watch, and Love Movies",
+    "home_hero_cta": "Explore Movies",
+    "home_cta_title": "Join Our Movie Community",
+    "home_cta_subtitle": "Get personalized recommendations, create watchlists, and connect with fellow movie enthusiasts.",
+    "home_cta_button": "Sign Up Now",
+
+    "header_title": "SvelteMovies",
+    "header_login": "Login",
+    
+    "footer_about": "SvelteMovies. All rights reserved"
 }

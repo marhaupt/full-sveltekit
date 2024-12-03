@@ -23,7 +23,7 @@
                 <Input {...props} bind:value={$formData.email} />
             {/snippet}
         </Form.Control>
-        <Form.Description>{m.login_field_email_description}</Form.Description>
+        <Form.Description>{m.login_field_email_description()}</Form.Description>
         <Form.FieldErrors />
     </Form.Field>
     <Form.Field {form} name="password">
@@ -36,5 +36,5 @@
         <Form.FieldErrors />
     </Form.Field>
 
-    <Form.Button>{m.login_field_button}</Form.Button>
+    <Form.Button>{m.login_field_button()}</Form.Button>
 </form>
