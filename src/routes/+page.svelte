@@ -24,7 +24,7 @@
             </p>
             <Button
                 href="/private/movies"
-                class="bg-background text-primary mt-8 hover:bg-slate-400"
+                class="mt-8 bg-background text-primary hover:bg-slate-400"
             >
                 {m.home_hero_cta()}
             </Button>
@@ -38,7 +38,7 @@
                     {m.home_cta_title()}
                 </h2>
                 <p
-                    class="mx-auto max-w-[700px] text-balance text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+                    class="mx-auto max-w-[700px] text-balance text-gray-600 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                 >
                     {m.home_cta_subtitle()}
                 </p>
