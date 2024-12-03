@@ -1,4 +1,12 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format",
-    "hello_world": "Hello, {name} from cs!"
+    "login_field_email_title": "Email",
+    "login_field_email_description": "You have to register yourself in Supabase",
+    "login_field_password_title": "Password",
+    "login_field_button": "Login",
+
+    "nav_home": "Home",
+    "nav_logout": "Logout",
+
+    "private_page_title": "Welcome!!",
+    "private_page_description": "This is a private page. You can only see this if you are logged in."
 }

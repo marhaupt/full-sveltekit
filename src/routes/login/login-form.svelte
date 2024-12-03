@@ -4,6 +4,7 @@
     import { formSchema, type FormSchema } from './schema';
     import { type SuperValidated, type Infer, superForm } from 'sveltekit-superforms';
     import { zodClient } from 'sveltekit-superforms/adapters';
+    import * as m from '$lib/paraglide/messages.js';
 
     export let data: SuperValidated<Infer<FormSchema>>;
 
@@ -18,23 +19,22 @@
     <Form.Field {form} name="email">
         <Form.Control>
             {#snippet children({ props })}
-                <Form.Label>Username</Form.Label>
+                <Form.Label>{m.login_field_email_title()}</Form.Label>
                 <Input {...props} bind:value={$formData.email} />
             {/snippet}
         </Form.Control>
-        <Form.Description>This is your public display name.</Form.Description>
+        <Form.Description>{m.login_field_email_description}</Form.Description>
         <Form.FieldErrors />
     </Form.Field>
     <Form.Field {form} name="password">
         <Form.Control>
             {#snippet children({ props })}
-                <Form.Label>Password</Form.Label>
+                <Form.Label>{m.login_field_password_title()}</Form.Label>
                 <Input type="password" {...props} bind:value={$formData.password} />
             {/snippet}
         </Form.Control>
-        <Form.Description>Password</Form.Description>
         <Form.FieldErrors />
     </Form.Field>
 
-    <Form.Button>Submit</Form.Button>
+    <Form.Button>{m.login_field_button}</Form.Button>
 </form>

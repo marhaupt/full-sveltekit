@@ -2,7 +2,7 @@ import type { Actions, PageServerLoad } from './$types';
 import { superValidate } from 'sveltekit-superforms';
 import { formSchema } from './schema';
 import { zod } from 'sveltekit-superforms/adapters';
-import { error, fail } from '@sveltejs/kit';
+import { error, fail, redirect } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async () => {
     return {
@@ -31,8 +31,6 @@ export const actions: Actions = {
             error(500, 'something went wrong');
         }
 
-        return {
-            form,
-        };
+        throw redirect(303, '/private');
     },
 };

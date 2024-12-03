@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
     import type { LayoutData } from './$types';
+    import * as m from '$lib/paraglide/messages.js';
 
     type Props = {
         children: Snippet;
@@ -19,9 +20,9 @@
 
 <header class="flex w-full items-center justify-between bg-gray-800 p-4 text-white">
     <nav>
-        <a href="/">Home</a>
+        <a href="/">{m.nav_home()}</a>
     </nav>
-    <button onclick={logout}>Logout</button>
+    <button onclick={logout}>{m.nav_logout()}</button>
 </header>
 <main>
     {@render children()}
