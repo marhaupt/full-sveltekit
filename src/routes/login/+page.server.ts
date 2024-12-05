@@ -28,9 +28,9 @@ export const actions: Actions = {
         });
 
         if (supabaseError) {
-            error(500, 'something went wrong');
+            error(400, { message: 'something went wrong' });
         }
 
-        throw redirect(303, '/private');
+        throw redirect(303, '/private/movies');
     },
 };

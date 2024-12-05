@@ -10,6 +10,10 @@
 
     const form = superForm(data, {
         validators: zodClient(formSchema),
+        resetForm: false,
+        onError: (error) => {
+            console.error(error);
+        },
     });
 
     const { form: formData, enhance } = form;

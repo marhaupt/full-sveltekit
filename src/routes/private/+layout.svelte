@@ -2,6 +2,8 @@
     import type { Snippet } from 'svelte';
     import type { LayoutData } from './$types';
     import * as m from '$lib/paraglide/messages.js';
+    import { goto } from '$app/navigation';
+    import { Button } from '$lib/components/ui/button';
 
     type Props = {
         children: Snippet;
@@ -15,6 +17,7 @@
         if (error) {
             console.error(error);
         }
+        goto('/');
     });
 </script>
 
@@ -22,7 +25,7 @@
     <nav>
         <a href="/">{m.nav_home()}</a>
     </nav>
-    <button onclick={logout}>{m.nav_logout()}</button>
+    <Button onclick={logout}>{m.nav_logout()}</Button>
 </header>
 <main>
     {@render children()}
